@@ -20,10 +20,18 @@
 <style>
     .fondo1 {
         width: 100%;
-        height: 70vh;
-        background-image: url("fondo1.png");
-        background-position: right;
+        height: 100vh;
+        background-image: url("fondo.jpg");
+        background-position: center;
         background-size: cover;
+        display: flex;
+        justify-content: center;
+        /* Centrado horizontal */
+        align-items: center;
+    }
+
+    .fondoh1 {
+        background: rgba(000, 000, 000, 0.5);
     }
 
     .fondo2 {
@@ -43,9 +51,8 @@
         font-family: 'Josefin Sans', sans-serif;
     }
 
-    h1 {
+    .h1 {
         font-family: 'Parisienne', cursive;
-        font-weight: 700;
         font-size: 70px;
         color: rgb(43, 64, 43);
     }
@@ -56,15 +63,20 @@
         color: rgb(43, 64, 43);
     }
 
-    .bi-gift, .bi-whatsapp {
+    .bi-gift,
+    .bi-whatsapp {
         font-size: 30px;
     }
+
     p {
         font-size: 20px;
     }
-    #botonCopiar, #botonCopiarAlias {
+
+    #botonCopiar,
+    #botonCopiarAlias {
         cursor: pointer;
     }
+
     #cuenta {
         display: flex;
         justify-content: center;
@@ -99,15 +111,21 @@
 
 <body>
     <main class="container-fluid">
-        <div class="row">
-            <div class="col-12 fondo1" data-aos="fade-left"></div>
+        <div class="row mb-3">
+            <div class="col-12 fondo1 text-center" data-aos="fade-left">
+                <div class="fondoh1 p-2">
+                    <h1 style="font-family: 'Tangerine', cursive; color: #fff; font-size: 50px;">Valentina y Nicolás
+                    </h1>
+                    <p style="color: #fff;">Nuestra Boda</p>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-12 text-center px-3" data-aos="fade-up">
                 <h3>"El amor es paciente; es servicial; el amor no es envidioso, no hace alarde, no se envanece, ni procede con bajeza."</h3>
                 <div><span class="typed"></div>
                 <div class="my-5" data-aos="fade-up">
-                    <h1 class="m-0">VyN</h1>
+                    <h1 class="m-0 h1">VyN</h1>
                     <p style="font-size: 30px;" class="mt-3">¡Nos Casamos!</p>
                 </div>
             </div>
